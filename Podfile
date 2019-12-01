@@ -6,8 +6,10 @@ target 'mapbox-ios' do
   use_frameworks!
 
   # Pods for mapbox-ios
-  pod 'Mapbox-iOS-SDK', '~> 5.5'
-
+  pod 'Mapbox-iOS-SDK', '5.4'
+  pod 'SnapKit'
+  pod 'RxSwift'
+  pod 'RxCocoa'
 
   target 'mapbox-iosTests' do
     inherit! :search_paths

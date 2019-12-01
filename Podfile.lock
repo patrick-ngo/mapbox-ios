@@ -1,16 +1,34 @@
 PODS:
-  - Mapbox-iOS-SDK (5.5.0)
+  - Mapbox-iOS-SDK (5.4.0)
+  - RxCocoa (5.0.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.0.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.1)
+  - SnapKit (5.0.1)
 
 DEPENDENCIES:
-  - Mapbox-iOS-SDK (~> 5.5)
+  - Mapbox-iOS-SDK (= 5.4)
+  - RxCocoa
+  - RxSwift
+  - SnapKit
 
 SPEC REPOS:
   trunk:
     - Mapbox-iOS-SDK
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SnapKit
 
 SPEC CHECKSUMS:
-  Mapbox-iOS-SDK: 7fa66a27e586acb14c7f32ec5a487343e3994451
+  Mapbox-iOS-SDK: 2b58f752d94e57e95b8e54f3b52569199f6efdba
+  RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
+  RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
+  RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: a675c2788c1d85ff8ad570926fb507c88cb72423
+PODFILE CHECKSUM: 9a4de3abf7c87944dc3d1faa726ee43894658573
 
 COCOAPODS: 1.8.4
