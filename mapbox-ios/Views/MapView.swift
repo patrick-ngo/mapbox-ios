@@ -90,7 +90,7 @@ class MapView: UIView, MGLMapViewDelegate {
         currentIndex = 1
         
         // Start a timer that will simulate adding points to our polyline. This could also represent coordinates being added to our polyline from another source, such as a CLLocationManagerDelegate.
-        timer = Observable<Int>.interval(0.05, scheduler: MainScheduler.instance)
+        timer = Observable<Int>.interval(.milliseconds(50), scheduler: MainScheduler.instance)
             .subscribe(onNext: { (timerCount) in
             self.tick()
         })
