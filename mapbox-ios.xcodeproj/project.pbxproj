@@ -16,6 +16,7 @@
 		B90B35D02392BA6100B8A9B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B90B35CE2392BA6100B8A9B3 /* LaunchScreen.storyboard */; };
 		B90B35DB2392BA6100B8A9B3 /* mapbox_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90B35DA2392BA6100B8A9B3 /* mapbox_iosTests.swift */; };
 		B90B35E62392BA6100B8A9B3 /* mapbox_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90B35E52392BA6100B8A9B3 /* mapbox_iosUITests.swift */; };
+		B91AA67B239409BF007DBF72 /* BottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91AA67A239409BF007DBF72 /* BottomView.swift */; };
 		E33AA71B483E66AD31ABF8D9 /* Pods_mapbox_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B68843ABBE8E37BBC49EC37 /* Pods_mapbox_ios.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,7 @@
 		B90B35E52392BA6100B8A9B3 /* mapbox_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapbox_iosUITests.swift; sourceTree = "<group>"; };
 		B90B35E72392BA6100B8A9B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B9165EBA7EE1418B241D6643 /* Pods-mapbox-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mapbox-iosTests.release.xcconfig"; path = "Target Support Files/Pods-mapbox-iosTests/Pods-mapbox-iosTests.release.xcconfig"; sourceTree = "<group>"; };
+		B91AA67A239409BF007DBF72 /* BottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomView.swift; sourceTree = "<group>"; };
 		BAD3050306143AA83EF10A44 /* Pods-mapbox-ios-mapbox-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mapbox-ios-mapbox-iosUITests.release.xcconfig"; path = "Target Support Files/Pods-mapbox-ios-mapbox-iosUITests/Pods-mapbox-ios-mapbox-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DC1C9C29ED238203D6B2BB4F /* Pods-mapbox-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mapbox-ios.debug.xcconfig"; path = "Target Support Files/Pods-mapbox-ios/Pods-mapbox-ios.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -137,6 +139,7 @@
 		B90B35C22392BA5C00B8A9B3 /* mapbox-ios */ = {
 			isa = PBXGroup;
 			children = (
+				B91AA679239409AF007DBF72 /* Views */,
 				B90B35C32392BA5C00B8A9B3 /* AppDelegate.swift */,
 				B90B35C52392BA5C00B8A9B3 /* SceneDelegate.swift */,
 				B90B35C72392BA5C00B8A9B3 /* ViewController.swift */,
@@ -163,6 +166,14 @@
 				B90B35E72392BA6100B8A9B3 /* Info.plist */,
 			);
 			path = "mapbox-iosUITests";
+			sourceTree = "<group>";
+		};
+		B91AA679239409AF007DBF72 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B91AA67A239409BF007DBF72 /* BottomView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -406,6 +417,7 @@
 				B90B35C82392BA5C00B8A9B3 /* ViewController.swift in Sources */,
 				B90B35C42392BA5C00B8A9B3 /* AppDelegate.swift in Sources */,
 				B90B35C62392BA5C00B8A9B3 /* SceneDelegate.swift in Sources */,
+				B91AA67B239409BF007DBF72 /* BottomView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
