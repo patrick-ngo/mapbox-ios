@@ -8,11 +8,13 @@
 
 import UIKit
 import SnapKit
+import RxSwift
 import Mapbox
 
 class MapView: UIView, MGLMapViewDelegate {
     
-    var timer: Timer?
+    let disposeBag = DisposeBag()
+    var timer: Disposable?
     var polylineSource: MGLShapeSource?
     var currentIndex = 1
     var allCoordinates: [CLLocationCoordinate2D]!
@@ -88,12 +90,16 @@ class MapView: UIView, MGLMapViewDelegate {
         currentIndex = 1
         
         // Start a timer that will simulate adding points to our polyline. This could also represent coordinates being added to our polyline from another source, such as a CLLocationManagerDelegate.
-        timer = Timer.scheduledTimer(timeInterval: 0.05, target: self, selector: #selector(tick), userInfo: nil, repeats: true)
+        timer = Observable<Int>.interval(0.05, scheduler: MainScheduler.instance)
+            .subscribe(onNext: { (timerCount) in
+            self.tick()
+        })
+        timer?.disposed(by: disposeBag)
     }
     
     @objc func tick() {
         if currentIndex > allCoordinates.count {
-            timer?.invalidate()
+            timer?.dispose()
             timer = nil
             return
         }
